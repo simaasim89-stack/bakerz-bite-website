@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact | Bakerz Bite</title>
+    <meta name="description" content="Contact Bakerz Bite for questions, custom cakes and event catering.">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-xl navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <span class="brand-mark">B</span><span>Bakerz <em>Bite</em></span>
+            </a>
+
+            <div class="visitors-badge">
+                👁️ Visitors: <span id="visitorcount">1258</span>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link nav-deals" href="deals.html">Deals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sitemap.html">Site Map</a></li>
+                    <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="merchandise.html">Merchandise</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ---------------------------- -->
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <p class="eyebrow">Say hello</p>
+                <h1>Let's <em>talk.</em></h1>
+                <p>Questions, custom cakes, or just want to say hi? We'd love to hear from you.</p>
+            </div>
+        </section>
+
+        <section class="container section split">
+            <div>
+                <h2>Come say <em>hello.</em></h2>
+                <p>📍 North Nazimabad, Karachi, Pakistan</p>
+                <p>✉ bakerzbite@123gmail.com</p>
+                <p>☎ +92 300 1234567</p>
+                <p>🕘 Mon–Sat: 9:00 AM – 8:00 PM</p>
+                <p class="muted">Contact details are demo placeholders—replace them with your real business information.
+                </p>
+            </div>
+
+            <form class="form-card needs-validation" id="contactForm" novalidate>
+                <label class="form-label" for="cName">Your name</label>
+                <input class="form-control mb-1" id="cName" name="name" placeholder="e.g. Ayesha Khan" maxlength="40" autocomplete="name">
+                <div class="field-error mb-3"></div>
+
+                <label class="form-label" for="cEmail">Email address</label>
+                <input class="form-control mb-1" id="cEmail" name="email" placeholder="you@example.com" autocomplete="email">
+                <div class="field-error mb-3"></div>
+
+                <label class="form-label" for="cPhone">Phone number</label>
+                <input class="form-control mb-1" id="cPhone" name="phone" placeholder="0300 1234567 or +92 300 1234567" autocomplete="tel">
+                <div class="field-error mb-3"></div>
+
+                <label class="form-label" for="cTopic">How can we help?</label>
+                <select class="form-select mb-3" id="cTopic" name="topic">
+                    <option>General question</option>
+                    <option>Custom cake order</option>
+                    <option>Event catering</option>
+                </select>
+
+                <label class="form-label" for="cMessage">Message</label>
+                <textarea class="form-control mb-1" id="cMessage" name="message" rows="4" maxlength="500" placeholder="Tell us a little more..."></textarea>
+                <div class="field-error mb-1"></div>
+                <small class="char-count muted d-block mb-3" data-for="cMessage">0 / 500</small>
+
+                <button class="btn btn-brown" type="submit">Send message</button>
+                <p class="form-feedback mt-3" aria-live="polite"></p>
+            </form>
+        </section>
+
+        <section class="container section narrow pt-0">
+            <div class="saved-box" id="savedContacts" hidden>
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <h3 class="h5 m-0">Your saved messages</h3>
+                    <button type="button" class="btn btn-sm btn-cream" data-clear="bb_contacts">Clear all</button>
+                </div>
+                <div class="saved-list"></div>
+            </div>
+        </section>
+    </main>
+    <!-- ---------------------------- -->
+    <footer class="site-footer">
+        <div class="container d-flex flex-wrap justify-content-between gap-2">
+            <span>© 2026 Bakerz Bite · Baked with love.</span>
+            <span>Fresh treats, happy hearts 🍰</span>
+        </div>
+    </footer>
+
+<div
+        style="font-size: large; position: fixed; bottom: 0; left: 0; width: 100%; height: 45px; background-color:rgb(24, 13, 24); color: white; padding: 10px 0; z-index: 999999; font-size: 13px;  border-top: 5px solid rgb(168, 82, 111);">
+        <marquee behavior="scroll" direction="left" scrollamount="5" onmouseover="this.stop()"
+            onmouseout="this.start()">
+            <span id="live-data-time"></span> | 📍 <span id="live-location">Location: North Nazimabad, karachi, Pakistan (24.86, 67.01)</span> |
+            🔗 Quick Links:
+            <a href="index.html" style="color: white; text-decoration: none; margin: 0% 8%;">Home</a> |
+            <a href="menu.html" style="color: white; text-decoration: none; margin: 0% 8%;">Menu</a> |
+            <a href="about.html" style="color:white; text-decoration: none; margin: 0% 8%;">About Us</a> |
+            <a href="contact.html" style="color:white; text-decoration: none; margin: 0% 8%;">Contact</a> |
+            <a href="sitemap.html" style="color: white; text-decoration: none; margin: 0% 8%;">Site Map</a> |
+            <a href="feedback.html" style="color: white; text-decoration: none; margin: 0% 8%;">Feedback</a> |
+            <a href="faq.html" style="color: white; text-decoration: none; margin: 0% 8%;">FAQ</a> |
+            <a href="gallery.html" style="color: white; text-decoration: none; margin: 0% 8%;">Gallery</a> |
+            <a href="merchandise.html" style="color: white; text-decoration: none; margin: 0% 8%;"> Merchandise</a> |
+        </marquee>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/site.js"></script>
+    <script src="js/orders.js"></script>
+    <script src="js/forms.js"></script>
+
+</body>
+
+</html>
