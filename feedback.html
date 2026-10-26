@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Feedback | Bakerz Bite</title>
+    <meta name="description" content="Tell us about your Bakerz Bite experience.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-xl navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html"><span
+                    class="brand-mark">B</span><span>Bakerz <em>Bite</em></span>
+            </a>
+
+            <div class="visitors-badge">
+                👁️ Visitors: <span id="visitorcount">1259</span>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"><span
+                    class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link nav-deals" href="deals.html">Deals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sitemap.html">Site Map</a></li>
+                    <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="merchandise.html">Merchandise</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ---------------------------- -->
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <p class="eyebrow">Help us get even sweeter</p>
+                <h1>Your thoughts <em>matter.</em></h1>
+                <p>Tell us about your Bakerz Bite experience.</p>
+            </div>
+        </section>
+        <section class="container section narrow">
+            <form class="form-card" id="feedbackForm" novalidate>
+                <label class="form-label">How was your experience?</label>
+
+                <div class="rating-options">
+                    <label><input type="radio" name="rating" value="5"> 😍<small>Loved it</small></label>
+                    <label><input type="radio" name="rating" value="4"> 😊<small>Great</small></label>
+                    <label><input type="radio" name="rating" value="3"> 🙂<small>Okay</small></label>
+                    <label><input type="radio" name="rating" value="2"> 🙁<small>Could improve</small></label>
+                </div>
+                <div class="field-error" data-for-rating></div>
+
+                <label class="form-label mt-4" for="fTried">What did you try?</label>
+                <input class="form-control mb-1" id="fTried" name="tried" maxlength="80" placeholder="Chocolate cake, croissants...">
+                <div class="field-error mb-3"></div>
+
+                <label class="form-label" for="fText">Your feedback</label>
+                <textarea class="form-control mb-1" id="fText" name="feedback" rows="5" maxlength="500" placeholder="We’re listening..."></textarea>
+                <div class="field-error mb-1"></div>
+                <small class="char-count muted d-block mb-3" data-for="fText">0 / 500</small>
+
+                <label class="form-label" for="fName">Name (optional)</label>
+                <input class="form-control mb-1" id="fName" name="name" maxlength="40" placeholder="Your name">
+                <div class="field-error mb-3"></div>
+
+                <button class="btn btn-brown" type="submit">Send feedback</button>
+                <p class="form-feedback mt-3" aria-live="polite"></p>
+            </form>
+
+            <div class="saved-box mt-4" id="savedFeedback" hidden>
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <h3 class="h5 m-0">Your previous feedback</h3>
+                    <button type="button" class="btn btn-sm btn-cream" data-clear="bb_feedbacks">Clear all</button>
+                </div>
+                <div class="saved-list"></div>
+            </div>
+        </section>
+    </main>
+    <!-- ---------------------------- -->
+    <footer class="site-footer">
+        <div class="container d-flex flex-wrap justify-content-between gap-2"><span>© 2026 Bakerz Bite · Baked with
+                love.</span><span>Fresh treats, happy hearts 🍰</span>
+        </div>
+    </footer>
+
+<div
+        style="font-size: large; position: fixed; bottom: 0; left: 0; width: 100%; height: 45px; background-color:rgb(24, 13, 24); color: white; padding: 10px 0; z-index: 999999; font-size: 13px;  border-top: 5px solid rgb(168, 82, 111);">
+        <marquee behavior="scroll" direction="left" scrollamount="5" onmouseover="this.stop()"
+            onmouseout="this.start()">
+            <span id="live-data-time"></span> | 📍 <span id="live-location">Location: North Nazimabad, karachi, Pakistan (24.86, 67.01)</span> |
+            🔗 Quick Links:
+            <a href="index.html" style="color: white; text-decoration: none; margin: 0% 8%;">Home</a> |
+            <a href="menu.html" style="color: white; text-decoration: none; margin: 0% 8%;">Menu</a> |
+            <a href="about.html" style="color:white; text-decoration: none; margin: 0% 8%;">About Us</a> |
+            <a href="contact.html" style="color:white; text-decoration: none; margin: 0% 8%;">Contact</a> |
+            <a href="sitemap.html" style="color: white; text-decoration: none; margin: 0% 8%;">Site Map</a> |
+            <a href="feedback.html" style="color: white; text-decoration: none; margin: 0% 8%;">Feedback</a> |
+            <a href="faq.html" style="color: white; text-decoration: none; margin: 0% 8%;">FAQ</a> |
+            <a href="gallery.html" style="color: white; text-decoration: none; margin: 0% 8%;">Gallery</a> |
+            <a href="merchandise.html" style="color: white; text-decoration: none; margin: 0% 8%;"> Merchandise</a> |
+        </marquee>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/site.js"></script>
+    <script src="js/orders.js"></script>
+    <script src="js/forms.js"></script>
+</body>
+
+</html>
