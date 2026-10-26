@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Menu | Bakerz Bite</title>
+    <meta name="description" content="Browse 27 freshly baked cakes, pastries, cookies, donuts, breads and sandwiches. Order online.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-xl navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <span class="brand-mark">B</span><span>Bakerz <em>Bite</em></span>
+            </a>
+
+            <div class="visitors-badge">
+                👁️ Visitors: <span id="visitorcount">1259</span>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link nav-deals" href="deals.html">Deals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a> </li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sitemap.html">Site Map</a></li>
+                    <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="merchandise.html">Merchandise</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="dhamaka">🔥 Weekend special: buy 2 cakes, get 1 cookie free. Use code <b>BITE10</b></div>
+    <!-- ------------main-------------------- -->
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <p class="eyebrow">The good stuff</p>
+                <h1>Our <em>menu.</em></h1>
+                <p>Find your new favourite, from celebration cakes to everyday treats.</p>
+                <div class="menu-tools">
+                    <input id="menuSearch" class="form-control" placeholder="Search cakes, pastries, ingredients..."
+                        aria-label="Search menu">
+                    <select id="menuSort" class="form-select" aria-label="Sort menu">
+                        <option value="">Sort: Featured</option>
+                        <option value="lo">Price: low to high</option>
+                        <option value="hi">Price: high to low</option>
+                        <option value="az">Name: A to Z</option>
+                    </select>
+                    <span class="cart-pill" data-bs-toggle="offcanvas" data-bs-target="#cartPanel">🛍 Cart: <b
+                            id="cartCount">0</b></span>
+                </div>
+            </div>
+        </section>
+        <!-- -------------------card---------------- -->
+        <section class="container section">
+            <div class="chips" id="menuChips" role="group" aria-label="Filter by category"></div>
+            <p class="result-note" id="resultNote" aria-live="polite"></p>
+            <div class="row g-4" id="menuGrid"></div>
+        </section>
+        <!-- ----------------modal-------------------- -->
+        <div class="modal fade" id="productModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content product-modal">
+                    <div class="modal-header border-0">
+                        <h2 class="modal-title" id="modalTitle">A sweet treat</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body" id="modalBody"></div>
+                    <div class="modal-footer border-0">
+                        <button class="btn btn-brown" id="modalAdd">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ------------------addtoCart----------------- -->
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="cartToast" class="toast" role="status">
+                <div class="toast-header"><strong class="me-auto">Bakerz Bite</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+                </div>
+                <div class="toast-body" id="toastMessage">Added to cart!</div>
+            </div>
+        </div>
+    </main>
+    <!-- -------------------footer------------- -->
+    <footer class="site-footer">
+        <div class="container d-flex flex-wrap justify-content-between gap-2">
+            <span>© 2026 Bakerz Bite · Baked with love.</span><span>Fresh treats, happy hearts 🍰</span>
+        </div>
+    </footer>
+
+<div
+        style="font-size: large; position: fixed; bottom: 0; left: 0; width: 100%; height: 45px; background-color:rgb(24, 13, 24); color: white; padding: 10px 0; z-index: 999999; font-size: 13px;  border-top: 5px solid rgb(168, 82, 111);">
+        <marquee behavior="scroll" direction="left" scrollamount="5" onmouseover="this.stop()"
+            onmouseout="this.start()">
+            <span id="live-data-time"></span> | 📍 <span id="live-location">Location: North Nazimabad, karachi, Pakistan (24.86, 67.01)</span> |
+            🔗 Quick Links:
+            <a href="index.html" style="color: white; text-decoration: none; margin: 0% 8%;">Home</a> |
+            <a href="menu.html" style="color: white; text-decoration: none; margin: 0% 8%;">Menu</a> |
+            <a href="about.html" style="color:white; text-decoration: none; margin: 0% 8%;">About Us</a> |
+            <a href="contact.html" style="color:white; text-decoration: none; margin: 0% 8%;">Contact</a> |
+            <a href="sitemap.html" style="color: white; text-decoration: none; margin: 0% 8%;">Site Map</a> |
+            <a href="feedback.html" style="color: white; text-decoration: none; margin: 0% 8%;">Feedback</a> |
+            <a href="faq.html" style="color: white; text-decoration: none; margin: 0% 8%;">FAQ</a> |
+            <a href="gallery.html" style="color: white; text-decoration: none; margin: 0% 8%;">Gallery</a> |
+            <a href="merchandise.html" style="color: white; text-decoration: none; margin: 0% 8%;"> Merchandise</a> |
+        </marquee>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/site.js"></script>
+    <script src="js/orders.js"></script>
+</body>
+
+</html>
